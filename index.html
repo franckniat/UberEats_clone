@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Uber Eats clone">
+    <meta name="description" content="Un clone responsive de Uber Eats ...">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Uber Eats clone</title>
+</head>
+<body>
+    <header class="bg-yellow-400">
+        <nav class="topbar flex items-center justify-between fixed top-0 w-full py-3 px-7 z-30">
+            <div class="brand_hamburger flex gap-6 items-center">
+                <a class="inline-flex"><i class="bi bi-list text-2xl"></i></a>
+                <a href="/">
+                    <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/97c43f8974e6c876.svg" alt="Uber eats LOGO">
+                </a>
+            </div>
+            <label for="address" class="search_item flex items-center bg-white">
+                <input type="text" class="outline-none bg-gray-200 pr-16 pl-8 py-4 w-[540px] border-b-2 border-transparent focus:border-b-2 focus:border-blue-600" placeholder="Saisissez l'adresse de livraison.">
+            </label>
+            <div class="auth_links flex gap-2 justify-between">
+                <a href="" class="button px-4 py-3 rounded-full bg-white hover:bg-gray-200 shadow text-black"><i class="bi bi-person-fill"></i> Connexion</a>
+                <a href="" class="button px-4 py-3 rounded-full bg-black hover:bg-slate-900 shadow text-white">Inscription</a>
+            </div>
+        </nav>
+        <section class="hero pt-24 lg:pt-48 pb-14 px-7">
+            <section class="hero_text mb-12">
+                <h1 class="lg:text-6xl sm:text-5xl text-3xl font-extrabold max-w-4xl">Vos plats préférés, directement à votre portée.</h1>
+            </section>
+            <section class="hero_search">
+                <form class="flex gap-2 items-center mb-5 mt-3">
+                    <label for="address" class="flex items-center bg-white">
+                        <input type="text" class="outline-none pr-16 pl-8 py-4 w-[540px] border-b-2 border-transparent focus:border-b-2 focus:border-blue-600" placeholder="Saisissez l'adresse de livraison.">
+                    </label>
+                    <div class="dropdown relative" role="button">
+                        <div class="dropdown_link bg-white py-4 px-6 flex items-center font-medium gap-3 justify-between">
+                            <span>Livrer maintenant <i class="bi bi-clock"></i></span>
+                            <span><svg width="24px" height="24px" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M17 11.7494V14.916L12 11.0827L7 14.916V11.7494L12 7.91602L17 11.7494Z" fill="#000000" transform="rotate(180, 12, 12)"></path></svg></span>
+                        </div>
+                        <div class="dropdown_content hidden absolute mt-1 left-1 w-full flex-col bg-white shadow">
+                            <a href="#" class="px-8 font-medium w-full mt-1 py-4 hover:bg-gray-100">Livrer maintenant</a>
+                            <a href="#" class="px-8 font-medium w-full mb-1 py-4 hover:bg-gray-100">Planifier pour plus tard</a>
+                        </div>
+                    </div>
+                    <button type="submit" class="button p-4 text-white font-bold rounded-lg hover:bg-slate-900 bg-black inline-flex">Trouver un restaurant</button>
+                </form>
+                <h3><a href="#" class="underline-offset-1 underline">Connexion</a> pour afficher vos adresses récentes</h3>
+            </section>
+        </section>
+    </header>
+    <main class="">
+        <section class="features py-24 px-5 grid grid-cols-3 gap-5">
+            <a class="feature_card cursor-pointer">
+                <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/88d55f7112efe55f.webp" alt="Feature 1">
+                <h2 class="text-3xl font-bold">Aider vos collaborateurs à se restaurer</h2>
+                <p class="underline underline-offset-1 font-bold">Créer un compte professionnel</p>
+            </a>
+            <a class="feature_card cursor-pointer">
+                <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/711d51ca1b458931.webp" alt="Feature 1">
+                <h2 class="text-3xl font-bold">Les plats de vos restaurants préférés, livrés chez vous</h2>
+                <p class="underline underline-offset-1 font-bold">Ajouter un restaurant</p>
+            </a>
+            <a class="feature_card cursor-pointer">
+                <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/16522a701585873b.webp" alt="Feature 1">
+                <h2 class="text-3xl font-bold">Livrer avec Uber Eats</h2>
+                <p class="underline underline-offset-1 font-bold">Devenir coursier-partenaire</p>
+            </a>
+        </section>
+        <section class="localisation px-5 py-10">
+            <section class="loc_title mb-5 flex items-center justify-between w-full">
+                <h1 class="text-4xl font-bold">Villes à proximité</h1>
+                <a href="#" class="underline underline-offset-1 font-bold">Afficher toutes les villes (+ de 500)</a>
+            </section>
+            <section class="loc_content relative w-full h-[300px] object-cover mb-5">
+                <div class="plans absolute top-0 left-0 right-0 bg-gray-300 h-[300px] mb-5"></div>
+            </section>
+            <section class="loc_city grid grid-cols-4 gap-5">
+                <div class="flex flex-col gap-4">
+                    <p>Amiens</p>
+                    <p>Angers</p>
+                    <p>Bordeaux</p>
+                    <p>Clermont-Ferrand</p>
+                    <p>Dijon</p>
+                    <p>Grenoble</p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <p>La Rochelle</p>
+                    <p>Lille</p>
+                    <p>Limoges</p>
+                    <p>Lyon</p>
+                    <p>Marseille</p>
+                    <p>Montpellier</p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <p>Mulhouse</p>
+                    <p>Nantes</p>
+                    <p>Nice</p>
+                    <p>Orléans</p>
+                    <p>Paris</p>
+                    <p>Perpignan</p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <p>Reims</p>
+                    <p>Rennes</p>
+                    <p>Rouen</p>
+                    <p>Strasbourg</p>
+                    <p>Toulouse</p>
+                    <p>Tours</p>
+                </div>
+            </section>
+        </section>
+        <section class="localisation px-5 py-10">
+            <section class="loc_title mb-10 flex items-center justify-between w-full ">
+                <h1 class="text-4xl font-bold">Uber à travers le monde</h1>
+                <a href="#" class="underline underline-offset-1 font-bold">Tous les pays</a>
+            </section>
+            <section class="loc_city grid grid-cols-4 gap-5">
+                <div class="flex flex-col gap-6">
+                    <p>Afrique du Sud</p>
+                    <p>Allemagne</p>
+                    <p>Australiew</p>
+                    <p>Belgique</p>
+                    <p>Canada</p>
+                    <p>Chili</p>
+                    <p>Costa rica</p>
+                    <p>Equateur</p>
+                </div>
+                <div class="flex flex-col gap-6">
+                    <p>Espagne</p>
+                    <p>Etats Unis</p>
+                    <p>France</p>
+                    <p>Guatemala</p>
+                    <p>Irlande</p>
+                    <p>Italie</p>
+                    <p>Japon</p>
+                    <p>Kenya</p>
+                </div>
+                <div class="flex flex-col gap-6">
+                    <p>Mexique</p>
+                    <p>Nouvelle-Zélande</p>
+                    <p>Panama</p>
+                    <p>Pays-bas</p>
+                    <p>Pologne</p>
+                    <p>Portugal</p>
+                    <p>République Dominicaine</p>
+                    <p>Royaume Uni</p>
+                </div>
+                <div class="flex flex-col gap-6">
+                    <p>Salvador</p>
+                    <p>Sri Lanka</p>
+                    <p>Suède</p>
+                    <p>Suisse</p>
+                    <p>Taiwan</p>
+                </div>
+            </section>
+        </section>
+        <div class="divider mt-5 mb-5 bg-gray-300 w-full h-[1px]"></div>
+        <footer class="py-16 px-5">
+            <section class="loc_city grid grid-cols-4 gap-5 mt-5 mb-10">
+                <div class="flex flex-col gap-6">
+                    <a href="/"><img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/97c43f8974e6c876.svg" alt=""></a>
+                    <div class="download_links flex items-center gap-3">
+                        <a href="#" class="w-32"><img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/3a6703b93895d3b2.svg" alt=""></a>
+                        <a href="#" class="w-32"><img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/df47c8284add9f40.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-6">
+                    
+                </div>
+                <div class="flex flex-col gap-6">
+                    <a href="#" class="hover:underline">Obtenir de l'aide</a>
+                    <a href="#" class="hover:underline">Ajouter votre restaurant</a>
+                    <a href="#" class="hover:underline">Devenir coursier-partenaire</a>
+                    <a href="#" class="hover:underline">Créer un compte professionnel</a>
+                    <a href="#" class="hover:underline">Promotions</a>
+                </div>
+                <div class="flex flex-col gap-6">
+                    <a href="#" class="hover:underline">Restaurants à promixité</a>
+                    <a href="#" class="hover:underline">Afficher toutes les villes</a>
+                    <a href="#" class="hover:underline">Tous les pays</a>
+                    <a href="#" class="hover:underline">Ccommandes à récuperer à proximité</a>
+                    <a href="#" class="hover:underline">À propos d'Uber Eats</a>
+                    <a href="#" class="hover:underline"><i class="bi bi-translate"></i> Français</a>
+                </div>
+            </section>
+            <div class="divider mt-5 mb-5 bg-gray-300 w-full px-5 h-[1px]"></div>
+            <div class="flex justify-around items-stretch gap-9">
+                <div class="flex items-center gap-3">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                </div>
+                <div class="flex justify-around gap-5">
+                    <a href="#" class="hover:underline text-base max-w-xs">Fonctionnement des applications Uber et Uber Eats</a>
+                    <a href="#" class="hover:underline text-base max-w-xs">Politique de confidentialité</a>
+                    <a href="#" class="hover:underline text-base max-w-xs">Conditions</a>
+                    <a href="#" class="hover:underline text-base max-w-xs">Tarifs</a>
+                    <a href="#" class="hover:underline text-base max-w-xs">Ne vendez et ne partagez pas mes informations personnelles</a>
+                </div>
+            </div>
+            <div class="flex items-center justify-end text-base mt-6 gap-5">
+                <p>Ce site est protégé par reCAPTCHA. Par ailleurs, la <a href="#" class="hover:underline">Politique de confidentialité</a> et les Conditions d'utilisation de Google s'appliquent.
+                </p>
+                <p class="text-sm">© 2023 Uber Technologies Inc.</p>
+            </div>
+        </footer>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
